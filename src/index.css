@@ -7,6 +7,11 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  --muted: rgba(255, 255, 255, 0.6);
+  --border: rgba(255, 255, 255, 0.2);
+  --bg: rgba(255, 255, 255, 0.05);
+  --accent: #646cff;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,9 +30,16 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 560px;
+  padding: clamp(1rem, 4vw, 2rem);
 }
 
 h1 {
@@ -58,6 +70,10 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #ffffff;
+    --muted: #64748b;
+    --border: rgba(0, 0, 0, 0.15);
+    --bg: rgba(0, 0, 0, 0.03);
+    --accent: #535bf2;
   }
   a:hover {
     color: #747bff;

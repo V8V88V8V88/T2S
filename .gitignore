@@ -12,10 +12,21 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Lock files
+bun.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Env
+.env
+.env.*
+
+# Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
+.cursor
 .DS_Store
 *.suo
 *.ntvs*
